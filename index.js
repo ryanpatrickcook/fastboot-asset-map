@@ -15,7 +15,6 @@ module.exports = {
     let assetFileName = null;
     let fastbootFileName = null;
     let fastbootFileContent = undefined;
-    let filesFound = 0;
     for (let i = 0; i < totalFiles; i++) {
       if (files[i].match(/^assetMap/i)) {
         assetFileName = files[i];

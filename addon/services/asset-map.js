@@ -2,7 +2,15 @@ import Service from 'ember-service';
 import computed from 'ember-computed';
 
 export default Service.extend({
-  map: __assetMapHash__,
+  map: computed(function() {
+    let assets;
+    try {
+      assets = __assetMapHash__;
+    } catch (e) {
+      assets = {};
+    }
+    return assets;
+  }),
 
   resolve(name) {
     let map = this.get('map.assets') || {};
