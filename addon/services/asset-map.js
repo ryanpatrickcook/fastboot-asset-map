@@ -12,6 +12,10 @@ export default Service.extend({
     return assets;
   }),
 
+  prepend: computed('map', function(){
+    return this.get('map.prepend') || '/';
+  }),
+
   resolve(name) {
     let map = this.get('map.assets') || {};
     let prepend = this.get('map.prepend') || '/';

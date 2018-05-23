@@ -6,19 +6,19 @@
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Ryan Patrick Cook",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/ryanpatrickcook/fastboot-asset-map/tree/master/addon",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.3.0"
+    "ember-cli-babel": "^6.6.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
